@@ -3,12 +3,13 @@
 * {
   box-sizing: border-box;
 }
-
+/* General styling steps added line height */
 body {
   margin: 0 auto;
   padding: 0 20px;
   min-width: 980px;
   max-width: 1400px;
+  line-height: 1.5;
 }
 
 /* Layout */
@@ -39,7 +40,35 @@ html {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1,h2,h3 {
+/*General styling steps 1-6 */
+h1 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    letter-spacing: 0.1rem;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    font-size: 1.6rem;
+    letter-spacing: 0.05rem;
+}
+
+section h2 + p,
+section h3 + p {
+    text-indent: 2rem;
 }
