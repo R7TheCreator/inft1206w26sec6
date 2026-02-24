@@ -30,7 +30,7 @@ ul {
 h1 {
     color: darkslategray;
 
-    border-bottom: 10px;
+    border-bottom: 10px dotted purple;
 
     font-size: 2rem;
 }
@@ -44,4 +44,14 @@ h2{
 .job-title {
     color: darkslategray;
     font-weight: bold;
+}
+/*styling the links*/
+a {
+    color: green;
+}
+
+/*styling the hover/focus of the links provided */
+a:hover, a:focus {
+    color: darkgreen;
+    text-decoration: none;
 }
