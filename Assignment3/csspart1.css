@@ -26,3 +26,22 @@ ul {
 
     border-radius: 20px;
 }
+/*text styles steps 1-3 */
+h1 {
+    color: darkslategray;
+
+    border-bottom: 10px;
+
+    font-size: 2rem;
+}
+/*step 2-3 for h2 */
+h2{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+/*styling div (job-title) */
+.job-title {
+    color: darkslategray;
+    font-weight: bold;
+}
