@@ -94,3 +94,20 @@ a[href^="http"] {
     background-size: 12px;
     padding-right: 15px;
 }
+
+/*List styling */
+/*Step 1 */
+ul, ol {
+    line-height: 1.5;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+/*Step 2 */
+ul {
+    list-style-type: square;
+}
+
+li {
+    line-height: 1.5;
+}
