@@ -72,3 +72,25 @@ section h2 + p,
 section h3 + p {
     text-indent: 2rem;
 }
+
+/* Link styling steps 1-4*/
+/* steps 1-2 */
+a:link, a:visited {
+    color: #aa6666;
+    text-decoration: underline;
+}
+a:hover, a:focus {
+    color: #884444;
+    text-decoration: none;
+}
+/*step 3 */
+a:focus {
+    outline: none;
+}
+
+/*step 4 */
+a[href^="http"] {
+    background: url('external-link-52.png') no-repeat 100% 0;
+    background-size: 12px;
+    padding-right: 15px;
+}
