@@ -70,3 +70,10 @@ nav {
     top: 0;
     z-index: 10;
 }
+
+/*Step 3 */
+.feature{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
