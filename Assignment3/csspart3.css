@@ -91,3 +91,18 @@ article {
 aside {
     flex: 3;
 }
+
+/*Step 5 */
+.photos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.photos img{
+    width: 100%;
+    display: block;
+}
