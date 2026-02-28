@@ -53,3 +53,12 @@ nav a {
 .feature {
   width: 200px;
 }
+
+/*Step 1 */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
