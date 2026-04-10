@@ -15,7 +15,7 @@ function randomValueFromArray(array) {
 // Willy the Goblin
 // Big Daddy
 // Father Christmas
-const Characters = ['Willy the Goblin', 'Big Daddy', 'Father Christmas']
+const characters = ['Willy the Goblin', 'Big Daddy', 'Father Christmas']
 
 // Places
 // the soup kitchen
@@ -33,6 +33,15 @@ const events = ['spontaneously combusted', 'melted into a puddle on the sidewalk
 
 function returnRandomStoryString() {
   // It was 94 Fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.
+  
+  // I'm picking random items from the arrays I created
+  const randomCharacter = randomValueFromArray(characters);
+  const randomPlace = randomValueFromArray(places);
+  const randomEvent = randomValueFromArray(events);
+
+  // I'm creating the story from the template and inserting the random items
+  let storyText = `It was 94 fahrenheit outside, so ${randomCharacter} went for a walk. When they got to ${randomPlace}, they stared in horror for a few moments, 
+  then ${randomEvent}. Bob saw the whole thing, but was not surprised — ${randomCharacter} weighs 300 pounds, and it was a hot day.`;
 
   return storyText;
 }
@@ -42,12 +51,17 @@ function returnRandomStoryString() {
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
+  
+  // Calling the function to get a fresh random story
+  let newStory = returnRandomStoryString();
+  
   if (customName.value !== "") {
     const name = customName.value;
+    newStory = newStory.replace('Bob', name)
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
+    const weight = Math.round(300 / 14) + 'stone';
     const temperature = Math.round(94);
   }
 
