@@ -59,13 +59,19 @@ function generateStory() {
     const name = customName.value;
     newStory = newStory.replace('Bob', name)
   }
-
+  // calculating the weight in stone and the temperature
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300 / 14) + 'stone';
-    const temperature = Math.round(94);
+    const weight = Math.round(300 / 14) + ' stone';
+    const temperature = Math.round((94 - 32) * 5 / 9) + ' Celsius';
+
+    // replacing the us variables in the story with the new uk values
+    newStory = newStory.replace('94 fahrenheit', temperature)
+    newStory = newStory.replace('300 pounds', weight);
   }
 
+  
+
   // TODO: replace "" with the correct expression
-  story.textContent = "";
+  story.textContent = newStory;
   story.style.visibility = "visible";
 }
