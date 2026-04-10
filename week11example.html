@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11</title>
+</head>
+<body>
+    <h1>Week 11:Introduction to Form</h1>
+    <form action="#" method="get">
+        <div>
+            <label for="fname">First Name: </label>
+            <input type="text" name="fname" id="fname" title="Enter your first name" placeholder="First Name">
+        </div>
+        <div>
+            <label for="lname">Last Name: </label>
+            <input type="text" name="lname" id="lname" title="Enter your last name" placeholder="Last Name">
+        </div>
+
+        <div>
+            <label for="pass"> Password: </label>
+            <input type="password" name="pass" id="pass">
+        </div>
+        <div>
+            <label for="">For upload assignment</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="">What are your hobbies and interests?</label>
+            <div>
+                <input type="checkbox" name="interest" value="sports" id="interest1">
+                <label for="interest1">Sports</label>
+                <input type="checkbox" name="interest" value="music" id="interest2">
+                <label for="interest2">Music</label>
+            </div>
+        </div>
+        <div>
+            <label for="">Which OS do you prefer?</label>
+            <div>
+                <input type="radio" name="os" value="windows">
+                <label for="">Windows</label>
+                <input type="radio" name="os" value="os2">
+                <label for="">OS2</label>
+            </div>
+        </div>
+        <div>
+            <label for="weekend">What do you want to do this weekend: </label>
+            <select name="weekend" id="weekend">
+                <option value="coffee">Drink coffee</option>
+                <option value="book">Read book</option>
+                <option>Sleeping</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="web">How is web development going so far?</label>
+            <div>
+                <textarea name="web" id="web" rows="8" cols="20">
+    
+                </textarea>
+            </div>
+        </div>
+        
+        <input type="date">
+        <input type="color">
+        <input type="number">
+        
+        <div>
+            <input type="submit">
+            <input type="reset">
+            <input type="button" value="OK">
+        </div>
+
+    </form>
+</body>
+</html>
