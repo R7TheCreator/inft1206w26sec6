@@ -50,3 +50,23 @@ function updateDisplayedImage(e) {
     displayedImage.setAttribute('src', newSrc);
     displayedImage.setAttribute('alt', newAlt);
 }
+
+// adding a click listener to the button to toggle dark overlay
+btn.addEventListener('click', () => {
+    const btnClass = btn.getAttribute('class');
+
+    if (btnClass === 'dark') {
+
+        // switching to light
+        btn.setAttribute('class', 'light');
+        btn.textContent = 'Lighten';
+        overlay.style.backgroundColor = 'rgb(0 0 0 / 0.5)';
+        
+        // switching to dark
+        
+    }   else {
+            btn.setAttribute('class', 'dark');
+            btn.textContent = 'Darken';
+            overlay.style.backgroundColor = 'rgb(0 0 0 / 0)';
+        }
+});
