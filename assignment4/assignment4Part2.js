@@ -13,5 +13,30 @@ const images = [
   { filename: 'pic5.jpg', alt: 'Large moth on a leaf' }
 ];
 
-// setting the base url for my images to be stored
-const baseURL = ''
+// setting the base url for my images to be stored but since my imgs are already in the same file, ill keep it empty.
+const baseURL = '';
+
+// looping through each image in my array
+for (const image of images) {
+    const newImage = document.createElement('img');
+
+    // setting source by combining base url and filename
+    newImage.setAttribute('src', baseURL + image.filename);
+    newImage.setAttribute('alt', image.alt)
+
+    // making it so I can select this with my keyboard
+    newImage.setAttribute('tabindex', '0')
+
+    // adding it to the thumb bar
+    thumbBar.appendChild(newImage);
+
+    // adding a click listener to change the big image
+    newImage.addEventListener('click', updateDisplayedImage);
+
+    // adding a listener for the enter key
+    newImage.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            updateDisplayedImage(e);
+        }
+    })
+}
