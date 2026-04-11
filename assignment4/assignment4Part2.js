@@ -40,3 +40,13 @@ for (const image of images) {
         }
     })
 }
+
+// creating the function that swaps the big image with alt text
+function updateDisplayedImage(e) {
+    const newSrc = e.target.getAttribute('src');
+    const newAlt = e.target.getAttribute('alt');
+
+    // applying those values to main large img
+    displayedImage.setAttribute('src', newSrc);
+    displayedImage.setAttribute('alt', newAlt);
+}
